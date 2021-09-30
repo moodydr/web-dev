@@ -1,0 +1,131 @@
+.wd-bg-color-black
+{ background-color: black; }
+
+.wd-hl-link {
+    border-bottom: rgb(29, 161, 242);
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    padding-bottom: 4px;
+}
+
+.wd-hl-link a:link{
+    border-bottom: rgb(29, 161, 242);
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    padding-bottom: 4px;
+}
+
+.wd-links a:link {
+    text-decoration: none;
+    color: rgb(110, 118, 125);
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 16px;
+}
+
+.wd-grid-row{
+    width: 588px;
+    height: 118px;
+    border: 1px solid rgb(47, 51, 54);
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+.wd-grid-row-header{
+    width: 588px;
+    height: 108px;
+    border: 1px solid rgb(47, 51, 54);
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+.wd-grid-row-non-image{
+    width: 588px;
+    height: 82px;
+    border: 1px solid rgb(47, 51, 54);
+    padding-left: 12px;
+    padding-top: 15px;
+}
+
+.wd-main{
+    width: 50%;
+    padding-left: 16px;
+}
+
+.wd-search-bar
+{
+    background-color: rgb(47, 51, 54);
+    width: 500px;
+    height: 46px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: 0;
+    color: white;
+    padding-left: 16px;
+}
+
+.wd-search-padding
+{
+    padding-left: 10px;
+    padding-bottom: 25px;
+}
+
+.wd-trends{
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    font-family: Helvetica;
+    padding: 2px;
+}
+
+.wd-missing-author{
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    font-family: Helvetica;
+    padding: 2px;
+}
+
+.wd-title{
+    font-family: Helvetica;
+    color:white;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.wd-number{
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    font-family: Helvetica;
+    padding: 2px;
+}
+
+.wd-name{
+    font-family: Helvetica;
+    color:white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.wd-text-push-down{
+    padding-top: 10px;
+}
+
+.wd-image{
+    width: 100px;
+    height: 100px;
+    float: right;
+    border-radius: 20px;
+    margin-right: 16px;
+}
+
+.wd-settings-icon {
+    float: right;
+    width: 20px;
+    height: 20px;
+    padding-right: 12px;
+    padding-top: 12px;
+}
+
+
+
