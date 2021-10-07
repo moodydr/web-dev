@@ -1,0 +1,131 @@
+.wd-bg-color-black
+{ background-color: black; }
+
+.wd-main{
+    width: 50%;
+    padding-left: 16px;
+}
+
+.wd-header-container
+{
+    width: 578px;
+    height: 38px;
+    border: 1px solid rgb(47, 51, 54);
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.wd-bookmark-container-b
+{
+    width: 578px;
+    height: 490px;
+    border: 1px solid rgb(47, 51, 54);
+    padding-left: 16px;
+    margin-right: 16px;
+}
+
+.wd-bookmark-header
+{
+    font-family: Helvetica;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wd-handle-header
+{
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    font-family: Helvetica;
+}
+
+.wd-handle
+{
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    font-family: Helvetica;
+}
+
+.wd-author
+{
+    color: white;
+    font-size: 15px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.wd-tweet-text
+{
+    color: white;
+    font-size: 15px;
+    font-family: Helvetica;
+}
+
+.wd-part-c
+{
+    padding-left: 12px;
+    padding-top: 12px;
+    max-width: 506px;
+    float: left;
+}
+
+.wd-avatar
+{
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    margin-top: 12px;
+    float: left;
+}
+
+.wd-below-padding
+{
+    padding: 12px;
+}
+
+.wd-border
+{
+    border: 1px solid rgb(47, 51, 54);
+    margin-top: 12px;
+    border-radius: 20px;
+}
+
+
+
+.wd-big-image
+{
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px; border-top-right-radius: 20px;
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-section-g
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 430px;
+}
+
+.wd-icon-set
+{
+    padding: 6px;
+    font-size: 13px;
+}
+
+.wd-icon-set a:link
+{
+    text-decoration: none;
+}
+.wd-icon{
+    color: rgb(110, 118, 125);
+}
+
+.wd-icon-heart{
+    color: red;
+}
+

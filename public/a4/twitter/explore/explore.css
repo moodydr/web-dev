@@ -1,0 +1,154 @@
+.wd-background{
+    background-color: black;
+}
+
+.wd-right-background{
+    background-color: rgb(22, 24, 28);
+}
+
+.wd-button {
+    border-radius: 20px;
+    background-color: rgb(42, 157, 237);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(42, 157, 237);
+}
+
+.list-group-item.top{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.list-group-item.bottom{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.wd-button-white{
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(22, 24, 28);
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    font-weight: bold;
+}
+
+.wd-small-image{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%
+}
+
+.wd-square-image{
+    border-radius: 10px;
+    width: 84px;
+    height: 84px;
+}
+.fa-cog {
+    color: rgb(42, 113, 244);
+}
+
+.wd-input{
+    border-radius: 20px;
+}
+
+.wd-light-font{
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+}
+
+.wd-white{
+    color: white;
+}
+
+
+
+.wd-dark-font{
+    font-size: 15px;
+}
+
+.wd-image{
+    position: relative;
+}
+
+.wd-image-text{
+    position: absolute;
+    bottom: 3px;
+    left: 24px;
+}
+
+.wd-search-color{
+    color: rgb(108, 116, 123);
+}
+
+
+
+.form-control{
+    color: white;
+    border-style: none;
+}
+
+.form-control:focus{
+    color: white;
+}
+
+.list-group .active{
+    background-color: black;
+    border-style: none;
+}
+
+.nav-tabs > li.nav-item > a.nav-link.active{
+    color: white;
+    background-color: black;
+    border-bottom-style: solid;
+    border-width: 6px;
+    border-color: rgb(29, 161, 242);
+    font-weight: bold;
+    padding: 8px 18px 12px 18px;
+}
+
+
+
+.nav-tabs > li.nav-item > a{
+    color: rgb(85, 92, 97);
+    background-color: black;
+    border-style: none;
+    font-weight: bold;
+    padding: 8px 18px 12px 18px;
+}
+
+.nav-tabs{
+    border-style: none;
+}
+
+
+/* Code originally from https://www.codehim.com/bootstrap/bootstrap-forms/bootstrap-4-search-box-with-icon/ */
+.wd-has-search .form-control {
+    padding-left: 2.375rem;
+    background-color: rgb(32, 35, 39);
+}
+
+/* Code originally from https://www.codehim.com/bootstrap/bootstrap-forms/bootstrap-4-search-box-with-icon/ */
+.wd-has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 3.375rem;
+    height: 2.175rem;
+    line-height: 2.675rem;
+    text-align: center;
+    pointer-events: none;
+}
+
+.wd-inner{
+    border-left: 1px solid rgb(33, 35, 39);
+    border-right: 1px solid rgb(33, 35, 39);
+    margin: 0 0;
+}
+
+.wd-inner-b{
+    border-bottom: 1px solid rgb(33, 35, 39);
+    margin: 0 0;
+}
