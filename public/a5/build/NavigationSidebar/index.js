@@ -12,7 +12,7 @@ const NavigationSidebar = (active) => {
                 <a id="explore" class="list-group-item ${active === 'explore' ? 'active' : ''}" href="../ExploreScreen/index.html">
                     <i class="fas fa-hashtag"></i>
                     <span class="d-none d-xl-inline">Explore</span></a>
-                <a id="notifications" class="list-group-item ${active === 'notifications' ? 'active' : ''}" href="#">
+                <a id="notifications" class="list-group-item ${active === 'notifications' ? 'active' : ''}" onclick="return NavigationSidebar('notifications')">
                     <i class="fas fa-bell"></i>
                     <span class="d-none d-xl-inline">Notifications</span></a>
                 <a id="messages" class="list-group-item ${active === 'messages' ? 'active' : ''}" href="#">
@@ -38,6 +38,14 @@ const NavigationSidebar = (active) => {
             </div>
     `);
 }
+
+//originally from geeks for geeks
+$(document).ready(function() {
+    $('a').click(function() {
+        $('a.list-group-item.active').removeClass("active");
+        $(this).addClass("active");
+    });
+});
 
 
 export default NavigationSidebar;
