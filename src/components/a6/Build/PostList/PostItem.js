@@ -13,14 +13,14 @@ const PostItem = ({
         return(
       <>
            <div className="col-1">
-           <img className="wd-small-image" alt src={post.avatarIcon}/>
+           <img className="wd-small-image" alt="" src={post.avatarIcon}/>
 </div>
            <div className="col-11 ps-4">
             <span className="fw-bold wd-white">{post.userName}</span><i className="fas fa-check-circle wd-white"></i><span className="wd-light-font">{post.handle}{post.time}</span>
             <br/><span className="wd-dark-font wd-white">{post.tweet}</span>
             <div className="row mt-1">
                 <div className="wd-image ">
-                    <img src={post.image} alt className="img-fluid wd-home-image"/>
+                    <img src={post.image} alt="" className="img-fluid wd-home-image"/>
                 </div>
             </div>
             <div className="row mb-2 g-0 px-2 py-2 wd-home-text">
@@ -56,14 +56,14 @@ const PostItem = ({
         <>
 
            <div className="col-1">
-           <img className="wd-small-image" alt src={post.avatarIcon}/>
+           <img className="wd-small-image" alt="" src={post.avatarIcon}/>
 </div>
            <div className="col-11 ps-4">
             <span className="fw-bold wd-white">{post.userName}</span><i className="fas fa-check-circle wd-white"></i><span className="wd-light-font">{post.handle}{post.time}</span>
             <br/><span className="wd-dark-font wd-white">{post.tweet}</span>
             <div className="row mt-1 mb-2">
                 <div className="wd-image">
-                    <img src={post.image} alt className="img-fluid wd-home-image-alt"/>
+                    <img src={post.image} alt="" className="img-fluid wd-home-image-alt"/>
                 </div>
             </div>
 

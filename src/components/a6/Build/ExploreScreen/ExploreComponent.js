@@ -37,7 +37,7 @@ const ExploreComponent = () => {
 
            <div className="row mb-2">
                 <div className="wd-image">
-                    <img src="../../images/starship.jpg" className="img-fluid"/>
+                    <img src="../../images/starship.jpg" alt="" className="img-fluid"/>
                     <div className="wd-image-text"><span className="fs-3 fw-bold wd-white">SpaceX's Starship</span></div>
                 </div>      
              </div>

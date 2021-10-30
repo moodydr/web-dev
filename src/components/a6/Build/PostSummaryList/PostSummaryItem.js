@@ -20,7 +20,7 @@ const PostSummaryItem = (
                             <br/><span className="fw-bold wd-dark-font wd-white">{post.title}</span>
                         </div>
                         <div className="col-3 my-auto">
-                            <img className="wd-square-image float-end" alt src={post.image}/>
+                            <img className="wd-square-image float-end" alt="" src={post.image}/>
                         </div>
                     </div>
            </li>
