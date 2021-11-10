@@ -6,7 +6,7 @@ import WhoToFollowList from "../WhoToFollowList";
 
 
 const ProfileScreen = () => {
-    let [showComponent, editShowComponent] = useState(false);
+    let [showComponent, editShowComponent] = useState(true);
 
     return(
         <div className="row mt-2">
