@@ -1,0 +1,188 @@
+
+.wd-button {
+    border-radius: 20px;
+    background-color: rgb(42, 157, 237);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(42, 157, 237);
+}
+
+.list-group-item.top{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.list-group-item.bottom{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.wd-button-white{
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(22, 24, 28);
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    font-weight: bold;
+}
+
+.wd-button-black{
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: dimgray;
+    font-weight: bold;
+}
+
+.wd-small-image{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%
+}
+
+.wd-square-image{
+    border-radius: 10px;
+    width: 84px;
+    height: 84px;
+}
+.fa-cog {
+    color: rgb(42, 157, 237);
+}
+
+.wd-input{
+    border-radius: 20px;
+}
+
+.wd-light-font{
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+}
+
+.wd-white{
+    color: white;
+}
+
+
+
+.wd-dark-font{
+    font-size: 15px;
+}
+
+.wd-image{
+    position: relative;
+}
+
+.wd-image-text{
+    position: absolute;
+    bottom: 2px;
+    left: 24px;
+}
+
+.wd-section-g
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 430px;
+}
+
+.wd-icon-set
+{
+    font-size: 14px;
+}
+
+.wd-icon{
+    color: rgb(110, 118, 125);
+}
+
+
+
+.wd-home-image{
+    border-top-left-radius: 20px; border-top-right-radius: 20px;
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-home-image-alt{
+    border-radius: 20px;
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-home-text{
+    border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-border
+{
+    border: 1px solid rgb(47, 51, 54);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.wd-lr-border{
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+}
+
+.wd-b-bottom{
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+
+.form-control{
+    color: white;
+    border-style: none;
+}
+
+.form-control:focus{
+    color: white;
+}
+
+
+
+/* Code originally from https://www.codehim.com/bootstrap/bootstrap-forms/bootstrap-4-search-box-with-icon/ */
+.wd-has-search .form-control {
+    padding-left: 2.375rem;
+    background-color: rgb(32, 35, 39);
+}
+
+/* Code originally from https://www.codehim.com/bootstrap/bootstrap-forms/bootstrap-4-search-box-with-icon/ */
+.wd-has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 3.375rem;
+    height: 0.575rem;
+    line-height: 1.675rem;
+    text-align: center;
+    pointer-events: none;
+}
+
+.wd-tweet-link {text-decoration: none; color: rgb(42, 157, 237);}
+
+.wd-stats {text-decoration: none;}
+
+
+.wd-image-container{
+    height: 65px;
+}
+
+.wd-profile-pic {
+    position: absolute;
+    left: 20px;
+    top: 155px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.wd-banner {
+    height: 190px;
+}
+
+
+
