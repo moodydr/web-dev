@@ -26,9 +26,7 @@ const EditProfile = (props) => {
             website: website,
             dateOfBirth: dateOfBirth
         });
-        dispatch({
-            type: 'no-edit'
-        })
+
         props.editShowComponent(true)
     }
 
@@ -36,9 +34,7 @@ const EditProfile = (props) => {
         dispatch({
             type: 'exit-edit',
         });
-        dispatch({
-            type: 'no-edit'
-        })
+
         props.editShowComponent(true)
     }
 
