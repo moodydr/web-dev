@@ -7,6 +7,7 @@ const Assignments = () => {
             <h1>React.js Assignments</h1>
             <li><Link to="/a6">Assignment 6</Link></li>
             <li><Link to="/a7">Assignment 7</Link></li>
+            <li><Link to="/a8">Assignment 8</Link></li>
         </>
     );
 };

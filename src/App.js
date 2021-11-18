@@ -7,6 +7,7 @@ import React from "react";
 import Assignments from "./components/AssignmentNav";
 import A6 from "./components/a6";
 import A7 from "./components/a7";
+import A8 from "./components/a8";
 
 function App() {
     return (
@@ -21,6 +22,10 @@ function App() {
                 <Route path ="/a7" exact={true}>
                     <A7/>
                 </Route>
+                <Route path ="/a8" exact={true}>
+                    <A8/>
+                </Route>
+
 
             </div>
         </BrowserRouter>

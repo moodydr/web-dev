@@ -1,0 +1,32 @@
+{
+  "name": "web-dev-node",
+  "version": "1.0.0",
+  "description": "Drayton Moody Heroku App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Drayton Moody",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "15.12.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moodydr/web-dev-node.git"
+  },
+  "keywords": [
+    "heroku",
+    "app"
+  ],
+  "bugs": {
+    "url": "https://github.com/moodydr/web-dev-node/issues"
+  },
+  "homepage": "https://github.com/moodydr/web-dev-node#readme"
+}
