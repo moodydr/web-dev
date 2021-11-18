@@ -1,4 +1,4 @@
-const TWEET_API = 'https://stormy-escarpment-82419.herokuapp.com';
+const TWEET_API = 'https://stormy-escarpment-82419.herokuapp.com/api/tweets';
 
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API)
