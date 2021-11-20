@@ -1,35 +1,31 @@
-let profileStuff = require('../data/profile.json');
+let profile = require('../data/profile.json');
 
 module.exports = (app) => {
 
-    const getAllMovies = (req, res) => res.json(movies);
+    const getCurrentProfile = (req, res) => res.json(profile);
 
-
-
-    const deleteMovie = (req, res) => {
-        const id = req.params['mid'];
-        movies = movies.filter(m => m._id !== id);
-        res.json(movies);
-    };
-    app.delete('/api/movies/:mid', deleteMovie);
-
-    const createMovie = (req, res) => {
-        const movie = req.body;
-        movies = [...movies, movie];
-        res.json(movies);
-    };
-    app.post('/api/movies', createMovie);
-
-    const saveMovie = (req, res) => {
-        const newMovie = req.body;
-        const movieId = req.params['mid'];
-        movies = movies.map(movie =>
-            movie._id === movieId ? newMovie : movie);
-        res.json(movies);
+    const updateCurrentProfile = (req, res) => {
+        const newProf = {
+            "firstName": req.body.firstName,
+            "lastName": req.body.lastName,
+            "handle": "jannunzi",
+            "profilePicture": "../../images/profpic.png",
+            "bannerPicture": "../../images/header.jpg",
+            "bio": req.body.bio,
+            "website": "youtube.com/webdevtv",
+            "location": req.location,
+            "dateOfBirth": req.dateOfBirth,
+            "dateJoined": "April 2009",
+            "followingCount": "312",
+            "followersCount": "180"
+        };
+        profile = newProf;
+        res.json(newProf);
     };
 
-    app.get('/api/movies', getAllMovies);
-    app.put('/api/movies/:mid', saveMovie);
+
+    app.get('/api/profile', getCurrentProfile);
+    app.put('/api/profile', updateCurrentProfile);
 
 
 

@@ -1,12 +1,14 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import PostSummaryList from "../PostSummaryList/index";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {fetchProfile} from "../../../../services/profileService";
 
 const selectAllProfile = (state) => state.profile;
 
 const Profile = (props) => {
     const prof = useSelector(selectAllProfile);
-
+    const dispatch = useDispatch();
+    useEffect(() => fetchProfile(dispatch), [dispatch]);
     const editClickHandler = () => {
         props.editShowComponent(false)
     }

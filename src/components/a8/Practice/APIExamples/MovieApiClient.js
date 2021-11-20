@@ -6,6 +6,9 @@ const MovieApiClient = () => {
                 .then(response => response.json())
                 .then(movies => setMovies(movies))
         , []);
+
+
+
     const deleteMovie = (movie) =>
         fetch(`https://stormy-escarpment-82419.herokuapp.com/api/movies/${movie._id}`, {
             method: 'DELETE'
@@ -14,11 +17,11 @@ const MovieApiClient = () => {
             .then(movies => setMovies(movies));
 
 
-
-
     const [movie, setMovie] = useState({title: '', rating: 2.5});
     const onMovieTitleChange = (event) =>
         setMovie({...movie, title: event.target.value});
+
+
     const createMovieClickHandler = () =>
         fetch('https://stormy-escarpment-82419.herokuapp.com/api/movies', {
             method: 'POST',
@@ -33,6 +36,7 @@ const MovieApiClient = () => {
 
     const saveMovie = () =>
         fetch(`https://stormy-escarpment-82419.herokuapp.com/api/movies/${movie._id}`, {
+
             method: 'PUT',
             body: JSON.stringify(movie),
             headers: {
@@ -42,8 +46,7 @@ const MovieApiClient = () => {
             .then(response => response.json())
             .then(movies => setMovies(movies));
 
-
-
+    console.log(movie._id);
     return(
         <div>
             <h2>Movies</h2>

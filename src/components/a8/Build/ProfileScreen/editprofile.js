@@ -1,8 +1,13 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
+import {fetchProfile, updateProfile} from "../../../../services/profileService";
+
+const selectAllProfile = (state) => state.profile;
 
 const EditProfile = (props) => {
-    const profile = useSelector((state) => state.profile);
+    const profile = useSelector(selectAllProfile);
+    const dispatch = useDispatch();
+    useEffect(() => fetchProfile(dispatch), [dispatch]);
 
     let [firstName, editFirstName] = useState(profile.firstName);
     let [lastName, editLastName] = useState(profile.lastName);
@@ -12,23 +17,12 @@ const EditProfile = (props) => {
     let [location, editLocation] = useState(profile.location);
     let [website, editWebsite] = useState(profile.website);
     let [dateOfBirth, editBirth] = useState(profile.dateOfBirth);
+    const profData = {firstName: firstName, lastName: lastName, bio: bio, bannerPicture: bannerPicture, profilePicture: profilePicture, location: location, website: website, dateOfBirth: dateOfBirth};
 
-    const dispatch = useDispatch();
     const saveClickHandler = () => {
-        dispatch({
-            type: 'save-edit',
-            firstName: firstName,
-            lastName: lastName,
-            bio: bio,
-            bannerPicture: bannerPicture,
-            profilePicture: profilePicture,
-            location: location,
-            website: website,
-            dateOfBirth: dateOfBirth
-        });
-
+        updateProfile(dispatch, profData);
         props.editShowComponent(true)
-    }
+    };
 
     const exitClickHandler = () => {
         dispatch({
@@ -36,7 +30,7 @@ const EditProfile = (props) => {
         });
 
         props.editShowComponent(true)
-    }
+    };
 
     return(
         <>
