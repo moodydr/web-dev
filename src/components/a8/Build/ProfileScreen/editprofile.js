@@ -7,7 +7,7 @@ const selectAllProfile = (state) => state.profile;
 const EditProfile = (props) => {
     const profile = useSelector(selectAllProfile);
     const dispatch = useDispatch();
-    useEffect(() => fetchProfile(dispatch), [dispatch]);
+    useEffect(() => fetchProfile(dispatch), [profile]);
 
     let [firstName, editFirstName] = useState(profile.firstName);
     let [lastName, editLastName] = useState(profile.lastName);
