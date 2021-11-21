@@ -20,7 +20,8 @@ export const updateProfile = (dispatch, profile) =>
             'content-type': 'application/json'
         }
     })
-        .then(response => response.json())
+
+.then(response => response.json())
         .then(profile =>
             dispatch({
                 type: 'save-edit',

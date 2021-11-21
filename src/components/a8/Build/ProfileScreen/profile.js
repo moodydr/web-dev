@@ -9,10 +9,10 @@ const Profile = (props) => {
     const prof = useSelector(selectAllProfile);
     console.log("ProfileComponent");
     const dispatch = useDispatch();
-    useEffect(() => fetchProfile(dispatch), [prof]);
+    useEffect(() => fetchProfile(dispatch), [dispatch]);
     const editClickHandler = () => {
         props.editShowComponent(false)
-    }
+    };
     return(
         <>
             <div className="row me-0">
