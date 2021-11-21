@@ -1,4 +1,5 @@
 const PROFILE_API = 'https://stormy-escarpment-82419.herokuapp.com/api/profile';
+//const PROFILE_API = 'http://localhost:4000/api/profile';
 
 export const fetchProfile = (dispatch) =>
     fetch(PROFILE_API)

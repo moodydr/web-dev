@@ -22,6 +22,8 @@ const EditProfile = (props) => {
     const saveClickHandler = () => {
         updateProfile(dispatch, profData);
         props.editShowComponent(true)
+        console.log(profData);
+        console.log(location);
     };
 
     const exitClickHandler = () => {

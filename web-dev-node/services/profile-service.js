@@ -9,16 +9,17 @@ module.exports = (app) => {
             "firstName": req.body.firstName,
             "lastName": req.body.lastName,
             "handle": "jannunzi",
-            "profilePicture": "../../images/profpic.png",
-            "bannerPicture": "../../images/header.jpg",
+            "profilePicture": req.body.profilePicture,
+            "bannerPicture": req.body.bannerPicture,
             "bio": req.body.bio,
             "website": "youtube.com/webdevtv",
-            "location": req.location,
-            "dateOfBirth": req.dateOfBirth,
+            "location": req.body.location,
+            "dateOfBirth": req.body.dateOfBirth,
             "dateJoined": "April 2009",
             "followingCount": "312",
             "followersCount": "180"
         };
+        console.log(newProf);
         profile = newProf;
         res.json(newProf);
     };

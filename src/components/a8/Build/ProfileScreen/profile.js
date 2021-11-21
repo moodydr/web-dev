@@ -46,6 +46,7 @@ const Profile = (props) => {
                 <span className="wd-light-font"><span className="fw-bold wd-white"> {prof.followingCount} </span> Following<span className="ms-2 fw-bold wd-white"> {prof.followersCount} </span> Followers</span>
             </div>
 
+
             {PostSummaryList()}
         </>
     );
