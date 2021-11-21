@@ -7,8 +7,9 @@ const selectAllProfile = (state) => state.profile;
 
 const Profile = (props) => {
     const prof = useSelector(selectAllProfile);
+    console.log("ProfileComponent");
     const dispatch = useDispatch();
-    useEffect(() => fetchProfile(dispatch), [dispatch]);
+    useEffect(() => fetchProfile(dispatch), [prof]);
     const editClickHandler = () => {
         props.editShowComponent(false)
     }
