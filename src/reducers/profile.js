@@ -6,17 +6,19 @@ const profile = (state = owner, action) => {
         case 'fetch-Profile':
             return(action.profile);
         case 'save-edit':
-            return({
-                ...state,
-                firstName: action.firstName,
-                lastName: action.lastName,
-                bio: action.bio,
-                bannerPicture: action.bannerPicture,
-                profilePicture: action.profilePicture,
-                location: action.location,
-                website: action.website,
-                dateOfBirth: action.dateOfBirth
-            });
+            // return({
+            //     // ...state,
+            //     // firstName: action.firstName,
+            //     // lastName: action.lastName,
+            //     // bio: action.bio,
+            //     // bannerPicture: action.bannerPicture,
+            //     // profilePicture: action.profilePicture,
+            //     // location: action.location,
+            //     // website: action.website,
+            //     // dateOfBirth: action.dateOfBirth
+            //
+            // });
+            return action.profile;
         case 'exit-edit':
             return (state);
 
