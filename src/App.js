@@ -8,6 +8,7 @@ import Assignments from "./components/AssignmentNav";
 import A6 from "./components/a6";
 import A7 from "./components/a7";
 import A8 from "./components/a8";
+import A9 from "./components/a9";
 
 function App() {
     return (
@@ -24,6 +25,9 @@ function App() {
                 </Route>
                 <Route path ="/a8" exact={true}>
                     <A8/>
+                </Route>
+                <Route path ="/a9" exact={true}>
+                    <A9/>
                 </Route>
 
 

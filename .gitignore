@@ -1,6 +1,13 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 .idea
 
+/data/db/*
+!/data/profile.json
+!/data/tweets.json
+!/data/db/profile
+!/data/db/tweets
+!/data/db/who
+
 # dependencies
 /node_modules
 /.pnp
